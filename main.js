@@ -15,7 +15,7 @@ function limpar(){
     if(peso.value!=="" && altura.value!==""){
       document.getElementById("peso").value=""
       document.getElementById("altura").value=""
-      document.getElementById("resultado").value=""
+      document.getElementById("resultado").innerHTML=""
   
     }
     
@@ -34,8 +34,9 @@ function calcularImc(){
         var entrada = document.getElementById("altura")
         document.getElementById("resultado").innerHTML=" "
 
-        entradas.style.backgroundColor="#ee9984"
-        entrada.style.backgroundColor="#ee9984"
+        document.getElementById("peso").style.border = "solid red";
+        document.getElementById("altura").style.border = "solid red";
+        
     } 
 
     else{
